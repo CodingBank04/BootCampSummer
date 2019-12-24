@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VP Suite">
+    <test verbose="2" preserve-order="true" name="VP Smoke">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.LessonCourse.tests.Category2"></class>
+        </classes>
+
+    </test></suite>
