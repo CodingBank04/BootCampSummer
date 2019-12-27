@@ -150,7 +150,7 @@ public class CategoryPage extends PageBase {
         By mylanlENG=By.xpath("(//*[@translate='LANG_EN'])[1]");
         By mylanTR=By.xpath("(//*[@translate='LANG_TR'])[1]");
         su.myActionClickBuildPerform(myLangLocator);
-        su.myActionPerform(mylanlENG);
+        su.byActionPerform(mylanlENG);
         su.myActionClickBuildPerform(mylanTR);
 
 

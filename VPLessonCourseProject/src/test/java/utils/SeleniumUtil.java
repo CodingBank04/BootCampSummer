@@ -124,9 +124,15 @@ public class SeleniumUtil {
         WebElement myElement = Driver.driver.findElement(locator);
         actions.moveToElement(myElement).click().perform();
     }
-    public void myActionPerform(By locator) {
+    public void myPerform(By locator) {
         Actions actions = new Actions(Driver.driver);
         WebElement myElement = Driver.driver.findElement(locator);
         actions.moveToElement(myElement).perform();
+    }
+    public By byActionPerform(By locator) {
+        Actions actions = new Actions(Driver.driver);
+        WebElement myElement = Driver.driver.findElement(locator);
+        actions.moveToElement(myElement).perform();
+        return locator;
     }
 }

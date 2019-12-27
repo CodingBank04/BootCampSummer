@@ -23,7 +23,7 @@ public class Category extends TestBase {
     }
     @Test(groups = {"All","Smoke","Regression"})
     public void verifyThatUserCanNotLogin() throws InterruptedException {
-        cp2.login("vpeker@na.edu","12df45_point");
+        cp2.login("username","password");
         Thread.sleep(2000);
         String errorMessageText = cp2.getErrorMessageText();
         Assert.assertEquals(errorMessageText, "Invalid password.");
